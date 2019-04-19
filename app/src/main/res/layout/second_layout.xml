@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="buttom_2"/>
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="buttom_3"/>
+
+    <Button
+        android:id="@+id/button_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="buttom_4"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp">
+        <RadioButton
+            android:id="@+id/radio1_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是"/>
+        <RadioButton
+            android:id="@+id/radio2_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="否"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/check_all_box"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全选"/>
+    <CheckBox
+        android:id="@+id/checkbox_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="红"/>
+    <CheckBox
+        android:id="@+id/checkbox_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="黄"/>
+    <CheckBox
+        android:id="@+id/checkbox_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蓝"/>
+
+    <TextView
+        android:id="@+id/checkbox_color"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="选择此区域颜色"
+        android:background="@drawable/view"/>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/chose1_item"
+        android:title="选择1"/>
+    <item
+        android:id="@+id/chose2_item"
+        android:title="选择2" />
+    <item
+        android:id="@+id/chose3_item"
+        android:title="选择3"/>
+
+</menu>
