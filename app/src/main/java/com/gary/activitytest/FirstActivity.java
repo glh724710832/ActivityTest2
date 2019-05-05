@@ -5,28 +5,34 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class FirstActivity extends AppCompatActivity {
+public class FirstActivity extends BaseActivity {
 
     private Button button_1;
     private Button button_2;
-
+    private static final String TAG = "FirstActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "task id is "+getTaskId());
         setContentView(R.layout.first_layout);
+
 
         button_1 = findViewById(R.id.button_1);
         button_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                /*
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:10086"));
+                 intent.setData(Uri.parse("tel:10086"));
+                 */
+               Intent intent = new Intent(FirstActivity.this,SecondActivity.class);
                 startActivity(intent);
             }
         });
@@ -63,6 +69,12 @@ public class FirstActivity extends AppCompatActivity {
              default:
         }
         return true;
+    }
+
+    @Override
+    protected  void onRestart() {
+        super.onRestart();
+        Log.d(TAG, "onRestart: ");
     }
 }
 
